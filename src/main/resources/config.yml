@@ -1,28 +1,27 @@
 # ---------------------------------------------------------
-# Plugin Name: d3kCraft
+# Plugin Name: CraftD3K
 # Author: madetv1280
-# Version: 1.0.0-dev-003
-# Description: Simple /craft Plugin with permission support
+# Version: 2.0.0-release
+# Description: Simple /craft plugin with permission support
 # Copyright (c) 2025 madetv1280
-#
 # License: MIT-License https://mit-license.org/
 # ---------------------------------------------------------
 
-# Enabled or disabled the WHOLE Plugin
-enabled: true
+# Enable or disable the entire plugin
+enabled: true  # [NOT YET IMPLEMENTED!]
 
-craft-op-required: false
-
-# cooldown between /craft or /c usage (in seconds) -1 means, no cooldown
-cooldown: -1
-
+# Cooldown between /craft or /c usage (in seconds)
+# 0 means no cooldown
+cooldown: 0
 cooldown-message-enabled: true
 
+# Path to messages file
 messages-file: messages.yml
 
-# Automatically checks Modrinth for a newer version of this plugin and logs a message to the console if an update is available.
-check-for-update: true
+# Automatically check Modrinth for newer versions of this plugin
+# Logs a message in the console if an update is available
+check-for-update: true  # [NOT YET IMPLEMENTED!]
 
-# Sending anonymous usage statistics to bStats (no personal data!)
-# What data is collected? -> https://bstats.org/getting-started
-enable-bstats: true;
+# Send anonymous usage statistics to bStats (no personal data)
+# More info: https://bstats.org/getting-started
+enable-bstats: true  # [NOT YET IMPLEMENTED!]

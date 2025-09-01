@@ -1,6 +1,6 @@
-package de.madetv1280.d3kCraft.commands;
+package de.madetv1280.CraftD3K.commands;
 
-import de.madetv1280.d3kCraft.Main;
+import de.madetv1280.CraftD3K.Main;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -9,9 +9,8 @@ public class CraftReloadCommand implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String [] args) {
-        if (!sender.hasPermission("d3kcraft.reload.use")) {
-            sender.sendMessage("no-permission"); // Check for permission
-
+        if (!sender.hasPermission("crafdt3k.reload.use")) {
+            sender.sendMessage(Main.getInstance().getMessage("no-permission")); // Check for permission
 
             return true;
         }

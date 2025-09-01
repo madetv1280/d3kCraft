@@ -1,4 +1,4 @@
-# d3kCraft
+# CraftD3K
 
 A simple Minecraft /craft plugin developed by madetv1280.
 

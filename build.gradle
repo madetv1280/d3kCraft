@@ -4,7 +4,7 @@ plugins {
 }
 
 group = 'de.madetv1280'
-version = '1.0.0-dev-003'
+version = '2.0.0-release'
 
 repositories {
     mavenCentral()

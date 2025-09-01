@@ -1,6 +1,6 @@
-name: d3kCraft
-version: '1.0.0-dev-003'
-main: de.madetv1280.d3kCraft.Main
+name: CraftD3K
+version: '2.0.0-release'
+main: de.madetv1280.CraftD3K.Main
 api-version: '1.21'
 authors: [ madetv1280 ]
 website: solo.to/madetv1280
@@ -17,11 +17,11 @@ commands:
     usage: /<command>
 
 permissions:
-  d3kcraft.craft.use:
+  craftd3k.craft.use:
     description: Permission for /craft
     default: true
 
-  d3kcraft.reload.use:
-    description: Permission for /craft
+  craftd3k.reload.use:
+    description: Permission for /craftreload
     default: op
 

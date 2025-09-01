@@ -1,3 +1,5 @@
-prefix: "[D3KCraft] | "
-plugin-reloaded: "Plugin reloaded successfully!"
-only-players: "This command can only be used by players"
+prefix: "§7[§r§aCraftD3K§7]§r "
+plugin-reloaded: "§aPlugin reloaded successfully!"
+only-players: "§eThis command can only be used by players"
+cooldown-message: "§eYou have to wait {time} seconds!"
+no-permission: "§cYou have no permission to do that"

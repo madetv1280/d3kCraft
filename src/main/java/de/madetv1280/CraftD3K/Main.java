@@ -1,17 +1,23 @@
-package de.madetv1280.d3kCraft;
+package de.madetv1280.CraftD3K;
 
-import de.madetv1280.d3kCraft.commands.CraftCommand;
+import de.madetv1280.CraftD3K.commands.CraftCommand;
+import de.madetv1280.CraftD3K.commands.CraftReloadCommand;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
+import java.util.HashMap;
+import java.util.UUID;
 
 public final class Main extends JavaPlugin {
 
     private static Main instance;
     private FileConfiguration messages;
     private File messagesFile;
+
+    // Saved player uuid and time;
+    private final HashMap<UUID, Long> cooldowns = new HashMap<>();
 
 
     // Plugin startup logic
@@ -27,6 +33,8 @@ public final class Main extends JavaPlugin {
         // Command registration
         getCommand("craft").setExecutor(new CraftCommand());
         getCommand("c").setExecutor(new CraftCommand()); // Alias for /craft
+
+        getCommand("craftreload").setExecutor(new CraftReloadCommand()); //
 
         String currentVersion = getDescription().getVersion();
 
@@ -47,6 +55,10 @@ public final class Main extends JavaPlugin {
     public static Main getInstance() {
         return instance;
 
+    }
+
+    public HashMap<UUID, Long> getCooldowns() {
+        return cooldowns;
     }
 
     // Reloads Configuration
